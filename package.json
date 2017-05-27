@@ -1,0 +1,23 @@
+{
+  "name": "caprica",
+  "version": "0.0.1",
+  "description": "caprica downloader based on electron & aria2",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanhao1991/Caprica.git"
+  },
+  "keywords": [
+    "aria2",
+    "downloader"
+  ],
+  "author": "Alex (Jinghao) Yan <yanhao1991@gmail.com> ",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^4.6.1",
+    "eslint-plugin-react": "^7.3.0",
+    "prettier": "^1.6.1"
+  }
+}
