@@ -3,9 +3,14 @@ const webpack = require("webpack")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 
 module.exports = {
-  target: "electron-renderer",
+  // target: "electron-renderer",
   entry: {
-    app: path.join(__dirname, "../src/index.js"),
+    app: [
+      "webpack-dev-server/client?http://localhost:8888",
+      "webpack/hot/only-dev-server",
+      "react-hot-loader/patch",
+      "src/index.js",
+    ],
   },
   output: {
     path: path.resolve(__dirname, "../dist"),
@@ -40,5 +45,6 @@ module.exports = {
         NODE_ENV: JSON.stringify("development"),
       },
     }),
+    new webpack.HotModuleReplacementPlugin(),
   ],
 }

@@ -18,7 +18,8 @@
   "license": "MIT",
   "dependencies": {
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "react-hot-loader": "next"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
